@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  max-width: 500px;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: start;
+}
+
+.login-form h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Responsive CSS using media queries */
+@media screen and (max-width: 768px) {
+  .login-form {
+    max-width: 100%;
+  }
+}
+
+</style>
+<body>
+    <section>
+        <div class="login-container">
+            <form class="login-form">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <a href="Index.html" class="submit">Log In</a>
+                <p>Don't have an account? <a href="Index.html">Sign Up</a></p>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
